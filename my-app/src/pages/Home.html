@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button
+  hx-get="/count"
+  hx-trigger="click"
+  hx-target="#count"
+  hx-swap="outerHTML"
+>count</button>
+
+<div id=count>
+  <!-- /count からのレスポンスがそのまま入る -->
+</div>
+</body>
+</html>
